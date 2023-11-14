@@ -42,51 +42,60 @@ To deploy the game, please follow the steps below:
 
    ```bash
    git clone https://github.com/meysamasadian/mancala.git
+   ```
+2. Run these commands inside the main directory of project:
 
-2. Run these two command inside of the main directory of project:
+   ```bash
+    cd  backend/mancala/
+    ```
 
-  ```bash
-  chmod +x ./backend/mancala/mvnw
+   ```bash
+    chmod +x ./mvnw
+    ```
+   ```bash
+    ./mvnw clean install
+    ```
 
-  ./backend/mancala/mvnw clean install
-
-
-With these command you will create the backend JAR file.
+   With these command you will create the backend JAR file.
 
 3. Run the below command to create/downlaod the required docker images(run it in the main directory as well)
 
-  ```bash
-  docker-compose build
+    ```bash
+    docker-compose build
+    ```
 
 This step may take few minutes.
 
 4. As final round, run the below command to deploy and run whole project and its 3rd-party tools.
 
-  ```bash
-  docker-compose up -d
+    ```bash
+    docker-compose up -d
+    ```
 
 When this step finished, make sure all containers are up by checking the docker dashboard in your system or by run:
 
   ```bash  
-  docker ps
+    docker ps
+   ```
 
-like the below images:
-{image}
+like the below image:
+![list of required containers](./help/docker-dashboard.png)
 
 In order to enter the game, open your browser, and look for the below  address:
   
 http://localhost:3050
 
 If all steps are successfully completed, you will see the below image:
-{image}
+![the entrypoint of the game](./help/entrypoint.png)
 
 Enter your user/pass if you already have an account, otherwise, follow the highlighted link to create an account.
-{image}
+![register/login](./help/login.png)
+![register/login](./help/register.png)
 
 Choose start gane and wait for competitor. (To test it, open another browser and login by another account to join the current game)
-{image}
-{image}
-
+![profile](./help/dashboard.png)
+![waiting for competitor](./help/waiting.png)
+![game view](./help/docker-dashboard.png)
 
 
 

@@ -95,7 +95,7 @@ Enter your user/pass if you already have an account, otherwise, follow the highl
 Choose start gane and wait for competitor. (To test it, open another browser and login by another account to join the current game)
 ![profile](./help/dashboard.png)
 ![waiting for competitor](./help/waiting.png)
-![game view](./help/docker-dashboard.png)
+![game view](./help/game.png)
 
 
 

@@ -69,7 +69,7 @@ This step may take few minutes.
 4. As final round, run the below command to deploy and run whole project and its 3rd-party tools.
 
     ```bash
-    docker-compose up -d
+    docker-compose up 
     ```
 
 When this step finished, make sure all containers are up by checking the docker dashboard in your system or by run:
